@@ -1,0 +1,16 @@
+.recommended-flex{
+    display: flex;
+    margin-left: 20rem;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    
+}
+.recommended-title{
+    margin-left: 20rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+nav{
+    background-color: #f8f9fa;
+    display: flex;
+    border-bottom: 3px solid #f3f3f3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+    margin-left: 50px;
+}
+input{
+    padding: 10px 20px;
+    border: none;
+    background: #ededed;
+    outline: none;
+    margin-left: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 20rem;
+    font-size: 1.2rem;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+  }
+.nav-icons{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+.nav-icons:hover {
+    color: #007bff; /* Change color on hover */
+  }

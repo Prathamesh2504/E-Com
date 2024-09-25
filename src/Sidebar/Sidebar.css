@@ -1,0 +1,81 @@
+.sidebar{
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  background-color: #f9f9f9;
+  border-right: 2px solid #ddd;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+}
+.logo-container{
+  background-color: #f5cbf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image{  
+  max-width: 100%;
+  height: 85px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.sidebar-title{
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ddd;
+  width: 60%;
+}
+.sidebar-label-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+  color: #2c2c2c;
+}
+.sidebar-label-container input{
+  display: none;
+}
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.sidebar-label-container:hover input ~ .checkmark{
+  background-color: #ccc;
+}
+.sidebar-label-container input:checked ~ .checkmark{
+  background-color: #007bff;
+}
+.checkmark::after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+.sidebar-label-container input:checked ~ .checkmark::after{
+  display: block;
+}
+.sidebar-label-container .checkmark::after{
+  top: 6.4px;
+  left: 6.4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
