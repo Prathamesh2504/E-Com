@@ -5,5 +5,7 @@
     margin-top: 2rem;
     margin-right: 2rem;
     z-index: -2;
-    background-color:#e6e6fa;
+    background-color:#f5cbf8;
+    padding-left: 90px;
+    border-radius: 8px;
 }
